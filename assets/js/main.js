@@ -24,12 +24,17 @@ document.querySelector('button').addEventListener('click', function () {
     var totalPrice = startingPrice + sommaIngredienti;
 
     var finalPrice;
-    var couponInput = document.getElementById('coupon').value;
+    var couponInput = document.getElementById('coupon_text').value;
     console.log(couponInput);
-
-
-
-    document.getElementById('final_price').innerHTML = totalPrice + ' €'
+    
+    if (coupons.includes(couponInput)){
+        finalPrice = totalPrice * 0.9;
+        document.getElementById('final_price').innerHTML = finalPrice + ' € - 10% discount with your coupon';
+        /* console.log(finalPrice); */
+    } else {
+        document.getElementById('final_price').innerHTML = totalPrice + ' €'
+        /* console.log(totalPrice); */
+    }
 
 })
 
