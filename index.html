@@ -9,11 +9,65 @@
 </head>
 <body>
     
-    <header></header>
+    <header>
+        <h1>Create Your Burger</h1>
+    </header>
 
-    <main></main>
+    <main>
+        <input type="text" name="burger_name" id=burger_name" placeholder="Name Your Burger">
+        <h3>Ingredients</h3>
+        <section id="ingredients">
+            <div class="ingredient_box">
+                <img src="" alt="">
+                <div class="ingredient_name">Cheese</div>
+                <input type="checkbox" name="cheese" id="cheese" data-price="2">
+                <div class="add_text"></div>
+            </div>
+            <div class="ingredient_box">
+                <img src="" alt="">
+                <div class="ingredient_name">Tomato</div>
+                <input type="checkbox" name="tomato" id="tomato" data-price="1">
+                <div class="add_text"></div>
+            </div>
+            <div class="ingredient_box">
+                <img src="" alt="">
+                <div class="ingredient_name">Egg</div>
+                <input type="checkbox" name="egg" id="egg" data-price="2">
+                <div class="add_text"></div>
+            </div>
+            <div class="ingredient_box">
+                <img src="" alt="">
+                <div class="ingredient_name">Lettuce</div>
+                <input type="checkbox" name="lettuce" id="lettuce" data-price="1">
+                <div class="add_text"></div>
+            </div>
+            <div class="ingredient_box">
+                <img src="" alt="">
+                <div class="ingredient_name">Mustard</div>
+                <input type="checkbox" name="mustard" id="mustard" data-price="0.5"> 
+                <div class="add_text"></div>
+            </div>
+            <div class="ingredient_box">
+                <img src="" alt="">
+                <div class="ingredient_name">Ketchup</div>
+                <input type="checkbox" name="ketchup" id="ketchup" data-price="0.5">
+                <div class="add_text"></div>
+            </div>
+        </section>
 
-    <footer></footer>
+        <section id="coupon_box">
+            <div>Discount Coupon</div>
+            <input type="text" name="coupon" id="coupon" placeholder="12345ABCDEF">
+        </section>
+
+        <button>Calculate</button>
+        
+    </main>
+
+    <footer>
+        <h3>Your Price</h3>
+        <div id="final_price"></div>
+    </footer>
 
     <script src="./assets/js/main.js"></script>
 </body>
