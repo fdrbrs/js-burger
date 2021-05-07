@@ -38,3 +38,8 @@ document.querySelector('button').addEventListener('click', function () {
 
 })
 
+//da fare:
+//-prezzo arrotondato alla seconda decimale
+//-immagini
+//-css
+
